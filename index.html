@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Drª Bruna Sakura </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            background-image: url('Imagens/flores.jpg');
+            background-position: top, right bottom;
+            background-repeat: no-repeat;
+            padding: 2px;
+        }
+        .header h1 {
+            text-align: center;
+            color: #444;
+        }
+        .header p {
+            text-align: center;
+            color: #444;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Drª Bruna Sakura </h1>
+        <p>Dermatologista</p>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <img src="Imagens/profile2.png" alt="Foto da Drª Jane Doe">
+            <h2>Sobre mim: </h2>
+            <p>Olá, meu nome é Dra. Bruna Passos e sou especializada em dermatologia para peles asiáticas, mas atendo todas as pessoas que buscam cuidados com a pele. Com 6 anos de experiência na área, minha meta é ajudar cada paciente a melhorar sua autoestima e alcançar uma pele saudável e bonita.
+
+                Ofereço um atendimento personalizado e de qualidade, focado nas necessidades únicas de cada indivíduo. Acredito que cuidar da pele é essencial para o bem-estar e confiança, e estou aqui para ajudá-lo nessa jornada.
+                
+                </p>
+        </div>
+
+        <div class="gallery">
+            <img src="Imagens/foto4.jpg" alt="Consultório 1">
+            <img src="Imagens/foto5.jpg" alt="Consultório 2">
+            <img src="Imagens/foto6.jpg" alt="Recepção">
+        </div>
+
+        <div class="section">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Biópsia de pele e couro cabeludo</li>
+                <li>Cirurgia de tumores de pele</li>
+                <li>Procedimentos a laser</li>
+                <li> Sessões do ultraformar para redução de gorduras corporal</li>
+               
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Formação Acadêmica</h2>
+            <p>Graduação em Medicina pela Universidade XYZ, Especialização em Dermatologia pela Universidade ABC.</p>
+        </div>
+        <div class="section">
+            <h2>Clinica Fotos</h2>
+            <div class="gallery">
+                <img src="Imagens/foto1.jpg" alt="Consultório 1">
+                <img src="Imagens/foto2.jpg" alt="Consultório 2">
+                <img src="Imagens/foto3.jpg" alt="Recepção">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Comentários de Clientes</h2>
+            <div class="carousel">
+                <div class="testimonial">
+                    <img src="Imagens/cliente1.jpg" alt="Maria L.">
+                    <p>"A Drª Sakura é uma profissional excelente. Minha pele nunca esteve tão saudável!" - Maria L.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="Imagens/cliente2.jpg" alt= "Sabrina O.">
+                    <p>"Atendimento de primeira qualidade, recomendo a todos!" - Sabrina O.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="Imagens/cliente3.jpg" alt="Ana V.">
+                    <p>"Ambiente acolhedor e ótimo atendimento. Volto sempre!" - Ana V.</p>
+                </div>  
+          <div class="testimonial">
+                <img src="Imagens/cliente4.jpg" alt="Laura E.">
+                <p>"A Drª Sakura me tirou todas as duvidas e adorei o atendimento dela" - Ana E.</p>
+            </div>
+        </div>
+        </div>
+        <div class="testimonial-video">
+            <h2>Depoimentos em Vídeo</h2>
+            <video controls>
+                <source src="Imagens/depoimente_site_dermato.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+        <div class="section">
+            <h2>Contato</h2>
+            <p>Email: dra.sakura@example.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <P> Local: São paulo - SP </P>
+        </div>
+    </div>
+    <div class="social-icons">
+        
+        <a href="" target="_blank">
+            <img src="Imagens/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/551112345678" target="_blank">
+            <img src="Imagens/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+    </div>
+    <div class="footer">
+        Site inspirado na excelente dermatologista Cindy Matsumoto, uma profissional incrível. Este site foi desenvolvido em JavaScript como parte de um projeto de portfólio. 
+        <br>
+        As imagens do site foram tiradas do banco de dados Freepix, Pinterest e Google.
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        document.querySelector('.profile img').addEventListener('click', function() {
+            if (this.classList.contains('expanded')) {
+                this.classList.remove('expanded');
+                this.style.width = '250px';  // tamanho original
+                this.style.height = '250px';  // tamanho original
+            } else {
+                this.classList.add('expanded');
+                this.style.width = '400px';  // tamanho expandido
+                this.style.height = '400px';  // tamanho expandido
+            }
+        });
+        </script>
+</body>
+</html>
