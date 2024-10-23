@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0aee0;
+    color: #333;
+}
+.header {
+    background-color: #55add6; /* Rosa escuro */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.profile {
+    text-align: center;
+}
+.profile img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+    border: 4px solid #d655d6;;
+}
+.section {
+    margin-top: 2rem;
+}
+h2 {
+    color: #55add6;;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #f8bbd0;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+a {
+    color: #c2185b;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.testimonial {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #f8bbd0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.testimonial img {
+    border-radius: 200%;
+    width: 250x;
+    height:250px;
+    margin-bottom: 0.5rem;
+   
+}
+.testimonial-video {
+    text-align: center;
+    margin: 20px 0;
+}
+.testimonial-video video {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
